@@ -1,0 +1,197 @@
+
+@import
+'../sass/abstracts/variables';
+
+// body
+body {
+    margin: 0 auto;
+    background-image: url(../images/background-2.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+// - - - - - buttons - - - - - - 
+button {
+    box-shadow: none !important;
+    border-radius: $main-border-radius !important;
+}
+
+#btnLogin, #btnSignup {
+    margin-top: $small-top-margin;
+    border: 1px solid rgba(250, 250, 250, 0);
+}
+
+#btnLogin {
+    background-color: $color-blue !important;
+    border: 1px solid $color-blue !important;
+    width: 150px !important;
+    height: 45px !important;
+}
+
+#btnLogin:hover {
+    background-color: $color-none !important;
+    color: $color-blue;
+    border: 1px solid $color-blue !important
+}
+
+#btnSignup {
+    background-color: $color-none !important;
+    border: 1px solid $color-none !important;
+    width: 150px !important;
+    height: 45px !important;
+}
+
+#btnSignup:hover {
+    background-color: $color-none !important;
+    border: 0.5px solid $color-white !important;
+}
+
+#btnPasswordForgotten {
+    background-color: $color-none !important;
+    color: $color-blue;
+    text-decoration: underline;
+}
+
+#btnPasswordForgotten:hover {
+    color: $color-lightblue;
+}
+
+#btnLogout {
+   background-color: $color-lightblue !important;
+   border: 1px solid $color-lightblue !important;
+   margin-top: $small-top-margin;
+}
+
+#btnLogout:hover {
+    background-color: $color-none !important;
+    border: 1px solid $color-lightblue !important;
+    color: $color-black;
+ }
+
+#btnPost {
+    background-color: $color-blue !important;
+    border: 1px solid $color-blue !important;
+    margin-top: $btn-top-margin;
+}
+
+#btnPost:hover {
+    background-color: $color-none !important;
+    border: 1px solid $color-blue !important;
+    color: $color-blue;
+}
+
+.editPostBtn {
+    position: absolute;
+    right: 10%;
+    padding: 5px;
+    border: 1px solid $color-blue;
+    background-color: $color-none;
+    color: $color-blue;
+    border-radius: $main-border-radius;
+    font-size: 80%;
+}
+
+.editPostBtn:hover {
+    background-color: $color-none !important;
+    border: 1px solid $color-blue !important;
+    color: $color-blue;
+    cursor: pointer;
+}
+
+// - - - - - containers - - - - - -
+.wrapper {
+    max-width: 519px;
+    min-height: 100vh;
+    background-image: $background-gradient;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.cont-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $main-top-margin auto 0px;
+    border-radius: $main-border-radius;
+}
+
+#succesForm, #blogForm, #blogResults {
+    display: none;
+}
+
+#succesForm {
+    background-color: $color-none;
+}
+
+#message2 {
+    margin-left: 0;
+    color: $color-lightgrey;
+}
+
+#message {
+    margin-top: $small-top-margin;
+    color: $color-pink;
+}
+
+#blogContainer {
+    overflow: scroll;
+    max-height: 500px;
+}
+
+
+// - - - - - trivia - - - - - -
+h1 {
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-family: $script-font;
+    margin-bottom: 50px;
+    color: $color-white;
+    font-size: 300%;
+}
+
+h6 {
+    color: $color-lightgrey;
+    font-size: 90%;
+}
+
+footer {
+    display: none;
+    justify-content: center;
+    margin-top: $small-top-margin;
+}
+
+input {
+    background-color: $color-white !important;
+    height: 37px !important;
+    width: 70% !important;
+    border-radius: $main-border-radius !important;
+    border: none !important;
+    padding-left: 20px !important;
+    margin: 10px 0px !important;
+}
+
+input:focus {
+    box-shadow: 0px 0px 0px $color-white !important;
+}
+
+#blogTitle {
+    border: none !important;
+}
+
+.cke_chrome {
+    border: none !important;
+}
