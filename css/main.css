@@ -1,47 +1,49 @@
-body {
-  margin: 0 auto;
-  background-image: url(../images/background-2.svg);
-  background-size: cover;
-  background-repeat: repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
 button {
   box-shadow: none !important;
   border-radius: 7px !important;
 }
 
-#btnLogin, #btnSignup {
+#btnLogin,
+#btnSignup,
+#btnSignupAsAdmin,
+#btnSignupAsStudent,
+#btnSignupConfirm,
+#btnPasswordReset {
   margin-top: 10px;
   border: 1px solid rgba(250, 250, 250, 0);
-}
-
-#btnLogin {
-  background-color: #03B8FA !important;
-  border: 1px solid #03B8FA !important;
-  width: 150px !important;
+  min-width: 220px !important;
   height: 45px !important;
 }
 
-#btnLogin:hover {
+#btnLogin,
+#btnSignupAsStudent,
+#btnSignupConfirm,
+#btnPasswordReset {
+  background-color: #03B8FA !important;
+  border: 1px solid #03B8FA !important;
+}
+
+#btnLogin:hover,
+#btnSignupAsAdmin:hover,
+#btnSignupAsStudent:hover,
+#btnSignupConfirm:hover,
+#btnPasswordReset:hover {
   background-color: rgba(245, 245, 245, 0) !important;
   color: #03B8FA;
   border: 1px solid #03B8FA !important;
 }
 
-#btnSignup {
+#btnSignup,
+#btnSignupAsAdmin {
   background-color: rgba(245, 245, 245, 0) !important;
-  border: 1px solid rgba(245, 245, 245, 0) !important;
-  width: 150px !important;
-  height: 45px !important;
+  border: 0.5px solid rgba(245, 245, 245, 0) !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 #btnSignup:hover {
   background-color: rgba(245, 245, 245, 0) !important;
   border: 0.5px solid #fff !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 #btnPasswordForgotten {
@@ -51,54 +53,30 @@ button {
 }
 
 #btnPasswordForgotten:hover {
-  color: #0acffe;
+  color: #02B1F1;
 }
 
-#btnLogout {
-  background-color: #0acffe !important;
-  border: 1px solid #0acffe !important;
+.btnLogout {
+  background-color: rgba(245, 245, 245, 0) !important;
+  border: 1px solid #02B1F1 !important;
   margin-top: 10px;
+  color: #02B1F1;
+  font-size: 80% !important;
+  height: 25px !important;
 }
 
-#btnLogout:hover {
+.btnLogout:hover {
   background-color: rgba(245, 245, 245, 0) !important;
-  border: 1px solid #0acffe !important;
-  color: #000;
-}
-
-#btnPost {
-  background-color: #03B8FA !important;
-  border: 1px solid #03B8FA !important;
-  margin-top: 40px;
-}
-
-#btnPost:hover {
-  background-color: rgba(245, 245, 245, 0) !important;
-  border: 1px solid #03B8FA !important;
-  color: #03B8FA;
-}
-
-.editPostBtn {
-  position: absolute;
-  right: 10%;
-  padding: 5px;
-  border: 1px solid #03B8FA;
-  background-color: rgba(245, 245, 245, 0);
-  color: #03B8FA;
-  border-radius: 7px;
-  font-size: 80%;
-}
-
-.editPostBtn:hover {
-  background-color: rgba(245, 245, 245, 0) !important;
-  border: 1px solid #03B8FA !important;
-  color: #03B8FA;
+  border: 1px solid #02B1F1 !important;
+  opacity: 0.6;
   cursor: pointer;
 }
 
-.wrapper {
-  max-width: 519px;
+.wrapper-1, .wrapper-2 {
   min-height: 100vh;
+}
+
+.wrapper-1 {
   background-image: linear-gradient(to bottom, #02b4f5, #008fdd, #0069c2, #0045a3, #051e7f);
 }
 
@@ -115,16 +93,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0px;
   border-radius: 7px;
-}
-
-#succesForm, #blogForm, #blogResults {
-  display: none;
-}
-
-#succesForm {
-  background-color: rgba(245, 245, 245, 0);
+  justify-content: center;
+  height: 100vh;
 }
 
 #message2 {
@@ -137,32 +108,112 @@ button {
   color: #ff0062;
 }
 
-#blogContainer {
-  overflow: scroll;
-  max-height: 500px;
+#homePage {
+  height: 100vh;
 }
 
-h1 {
+.header {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-h4 {
-  font-family: "Indie Flower", cursive;
-  margin-bottom: 50px;
-  color: #fff;
-  font-size: 300%;
+.header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 
-h6 {
-  color: #a5a5a5;
-  font-size: 90%;
-}
-
-footer {
-  display: none;
+.make-circle {
+  display: flex;
   justify-content: center;
-  margin-top: 10px;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50px;
+}
+
+.header-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 0px 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.just-a-box {
+  max-width: 85%;
+  min-height: 50px;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 50px 0px;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+
+.judge-block {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0px;
+  align-items: center;
+}
+
+img.room-picture {
+  width: 90%;
+}
+
+img.judge-icons {
+  width: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0px;
+  border-top: 0.5px solid black;
+  width: 85%;
+}
+
+.info-list {
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+img.room-picture-list {
+  display: inline-block;
+  width: 30%;
+  margin-left: 20px;
+}
+
+.info-list-text {
+  display: inline-block;
 }
 
 input {
@@ -173,10 +224,62 @@ input {
   border: none !important;
   padding-left: 20px !important;
   margin: 10px 0px !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 input:focus {
   box-shadow: 0px 0px 0px #fff !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+h1 {
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 110% !important;
+  font-weight: 700 !important;
+}
+
+h4 {
+  font-family: "Indie Flower", cursive;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 300%;
+}
+
+h6.h6-main {
+  color: #a5a5a5;
+  font-size: 90% !important;
+}
+
+a.page-arrow {
+  padding: 15px;
+}
+
+a.page-arrow:hover {
+  opacity: 0.7;
+}
+
+a.page-arrow img {
+  margin-top: 50px;
+  height: 15px;
+}
+
+.header-top img {
+  height: 20px;
+}
+
+.nav-icons-bottom img {
+  height: 20px;
+}
+
+footer {
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 #blogTitle {

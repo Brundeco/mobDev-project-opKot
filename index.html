@@ -5,35 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="images/media.svg">
+    <!-- <link rel="shortcut icon" href="images/media.svg"> -->
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-database.js"></script>
     <link rel="stylesheet" href="css/vendors/materialize.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
-    <script src="js/ckeditor/ckeditor.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendors/materialize.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet">
+    <!-- <script src="js/ckeditor/ckeditor.js"></script> -->
     <title>Ciao</title>
 </head>
 
 <body>
-    <!-- - - - - - - - - - - - - - - Start screen - - - - - - - - - - - - - - -->
-    <div class="wrapper">
-        <div class="container container-login cont-general" id="startScreen">
+    <!-- - - - - - - - - - - - - - - Log in screen - - - - - - - - - - - - - - -->
+    <div class="wrapper-1" id="screenStart">
+        <div class="container container-login cont-general">
             <h4>Ciao</h4>
-            <div class="box"> 
+            <div class="box">
                 <input type="text" id="txtEmail" placeholder="Email">
                 <input type="password" id="txtPassword" placeholder="Password">
                 <button id="btnPasswordForgotten" class="btn btn-secondary">Password reset</button>
             </div>
             <div class="box">
-                <button id="btnLogin" class="btn btn-action pink lighten-1>">Log in</button>
-                <button id="btnSignup" class="btn btn-secondary pink lighten-7>">Sign up</button>
+                <button id="btnLogin" class="btn lighten-1>">Log in</button>
+                <button id="btnSignup" class="btn lighten-7>">Sign up</button>
                 <div id="message"></div>
             </div>
         </div>
     </div>
-    
-    <script></script>
+
+    <!-- - - - - - - - - - - - - - - Sign up type screen - - - - - - - - - - - - - - -->
+    <div class="wrapper-1" id="screenSignUpType">
+        <div class="container container-login cont-general" id="startScreen">
+            <h4>Ciao</h4>
+            <div class="box">
+                <button id="btnSignupAsStudent" class="btn lighten-1>">Sign up as a student</button>
+                <button id="btnSignupAsAdmin" class="btn lighten-7>">Sign up as a administrator</button>
+            </div>
+            <a href="#" class="page-arrow"><img src="images/page-arrow.svg" alt="arrow"></a>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - Sign up form screen - - - - - - - - - - - - - - -->
+    <div class="wrapper-1" id="screenSignUpConfirm">
+        <div class="container container-login cont-general" id="startScreen">
+            <h4>Ciao</h4>
+            <div class="box">
+                <h6 class="h6-main">Your information</h6>
+                <input type="text" id="txtEmail" placeholder="First name">
+                <input type="text" id="txtEmail" placeholder="Last name">
+                <input type="text" id="txtEmail" placeholder="Address">
+                <input type="text" id="txtEmail" placeholder="Email">
+                <input type="text" id="txtEmail" placeholder="Password">
+                <input type="text" id="txtEmail" placeholder="Education">
+                <button id="btnSignupConfirm" class="btn lighten-7>">Sign up</button>
+            </div>
+            <a href="#" class="page-arrow"><img src="images/page-arrow.svg" alt="arrow"></a>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - Password reset screen - - - - - - - - - - - - - - -->
+    <div class="wrapper-1" id="screenPasswordReset">
+        <div class="container container-login cont-general" id="startScreen">
+            <h4>Ciao</h4>
+            <div class="box">
+                <h6 class="h6-main">Reset password</h6>
+                <input type="text" id="txtEmail" placeholder="Email">
+                <button id="btnPasswordReset" class="btn lighten-7>">Send email verification link</button>
+            </div>
+            <a href="#" class="page-arrow"><img src="images/page-arrow.svg" alt="arrow"></a>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - Home page - - - - - - - - - - - - - - -->
+    <div class="wrapper-2" id="screenHomePage">
+        <div class="header">
+            <div class="header-top">
+                <span class="make-circle"><img src="images/profile.svg" alt="arrow"></span>
+                <h6 class="h6-main">decoene.bruno@hotmail.com</h6>
+            </div>
+            <div class="header-bottom">
+                <button class="btnLogout" class="btn lighten-7>">Sign out</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="just-a-box">
+                <h2>Beschikbare kamers</h2>
+                <div class="info-block">
+                    <img src="images/kot-1.png" class="room-picture" alt="">
+                    <h5 class="h5-room-type">Studio</h5>
+                    <h6 class="h6-address">Vlaanderenstraat 21, 9000 Gent</h6>
+                    <p>23 m2</p>
+                </div>
+                <div class="judge-block">
+                    <a href=""><img src="images/skip.svg" class="judge-icons" alt=""></a>
+                    <a href=""><img src="images/like.svg" class="judge-icons" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#" class="nav-icons-bottom"><img src="images/favorites.svg" alt="arrow"></a>
+                <a href="#" class="nav-icons-bottom"><img src="images/home.svg" alt="arrow"></a>
+                <a href="#" class="nav-icons-bottom"><img src="images/messages.svg" alt="arrow"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - List view page - - - - - - - - - - - - - - -->
+    <div class="wrapper-2" id="screenListView">
+        <div class="header">
+            <div class="header-top">
+                <span class="make-circle"><img src="images/profile.svg" alt="arrow"></span>
+                <h6 class="h6-main">decoene.bruno@hotmail.com</h6>
+            </div>
+            <div class="header-bottom">
+                <button class="btnLogout" class="btn lighten-7>">Sign out</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="just-a-box">
+                <h2>Beschikbare kamers</h2>
+                <div class="info-list">
+                    <img src="images/kot-1.png" class="room-picture-list" alt="">
+                    <div class="info-list-text">
+                        <h5 class="h5-room-type">Studio</h5>
+                        <h6 class="h6-address">Vlaanderenstraat 21, 9000 Gent</h6>
+                        <p>23 m2</p>
+                    </div>
+                </div>
+                <div class="info-list">
+                    <img src="images/kot-1.png" class="room-picture-list" alt="">
+                    <div class="info-list-text">
+                        <h5 class="h5-room-type">Studio</h5>
+                        <h6 class="h6-address">Vlaanderenstraat 21, 9000 Gent</h6>
+                        <p>23 m2</p>
+                    </div>
+                </div>
+                <div class="info-list">
+                    <img src="images/kot-1.png" class="room-picture-list" alt="">
+                    <div class="info-list-text">
+                        <h5 class="h5-room-type">Studio</h5>
+                        <h6 class="h6-address">Vlaanderenstraat 21, 9000 Gent</h6>
+                        <p>23 m2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#" class="nav-icons-bottom"><img src="images/favorites.svg" alt="arrow"></a>
+                <a href="#" class="nav-icons-bottom"><img src="images/home.svg" alt="arrow"></a>
+                <a href="#" class="nav-icons-bottom"><img src="images/messages.svg" alt="arrow"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - Init firebase - - - - - - - - - - - - - - -->
+    <script>
+        var config = {
+            apiKey: "AIzaSyDYqao9LCkF6oXszrykeOV4oxtoTuUvuwM",
+            authDomain: "op-kot-in-gent.firebaseapp.com",
+            databaseURL: "https://op-kot-in-gent.firebaseio.com",
+            projectId: "op-kot-in-gent",
+            storageBucket: "op-kot-in-gent.appspot.com",
+            messagingSenderId: "333922770361"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
+
 </html>
