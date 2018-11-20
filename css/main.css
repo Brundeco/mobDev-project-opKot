@@ -1,3 +1,12 @@
+#screenSignUpType,
+#screenSignUpConfirm,
+#screenPasswordReset,
+#screenHomePage,
+#screenListView,
+#screenMessages {
+  display: none;
+}
+
 button {
   box-shadow: none !important;
   border-radius: 7px !important;
@@ -125,11 +134,12 @@ button {
 }
 
 .header-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .make-circle {
@@ -319,6 +329,7 @@ h4 {
 h6.h6-main {
   color: #a5a5a5;
   font-size: 90% !important;
+  margin-top: 20px;
 }
 
 a.page-arrow {
