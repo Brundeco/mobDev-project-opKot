@@ -117,6 +117,10 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f1f1f1 !important;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .header-top {
@@ -187,8 +191,9 @@ img.judge-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 30px 0px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer-links {
