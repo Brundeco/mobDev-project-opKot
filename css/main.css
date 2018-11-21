@@ -7,7 +7,7 @@
   display: none;
 }
 
-button {
+.box > a, .header-top a {
   box-shadow: none !important;
   border-radius: 7px !important;
 }

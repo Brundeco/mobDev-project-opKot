@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="shortcut icon" href="images/media.svg"> -->
-    <link rel="stylesheet" href="css/main.css">
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-database.js"></script>
     <link rel="stylesheet" href="css/vendors/materialize.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/vendors/materialize.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet">
@@ -26,11 +26,11 @@
             <div class="box">
                 <input type="text" id="txtEmail" placeholder="Email">
                 <input type="password" id="txtPassword" placeholder="Password">
-                <button id="btnPasswordForgotten" class="btn btn-secondary">Password reset</button>
+                <a id="btnPasswordForgotten" class="btn btn-secondary">Password reset</a>
             </div>
             <div class="box">
-                <button id="btnLogin" class="btn lighten-1>">Log in</button>
-                <button id="btnSignup" class="btn lighten-7>">Sign up</button>
+                <a id="btnLogin" class="btn lighten-1>">Log in</a>
+                <a id="btnSignup" class="btn lighten-7>">Sign up</a>
                 <div id="message"></div>
             </div>
         </div>
@@ -41,8 +41,8 @@
         <div class="container container-login cont-general" id="startScreen">
             <h4>Ciao</h4>
             <div class="box">
-                <button id="btnSignupAsStudent" class="btn lighten-1>">Sign up as a student</button>
-                <button id="btnSignupAsAdmin" class="btn lighten-7>">Sign up as a administrator</button>
+                <a id="btnSignupAsStudent" class="btn lighten-1>">Sign up as a student</a>
+                <a id="btnSignupAsAdmin" class="btn lighten-7>">Sign up as a administrator</a>
             </div>
             <a href="#" class="page-arrow"><img src="images/page-arrow.svg" alt="arrow"></a>
         </div>
@@ -60,7 +60,7 @@
                 <input type="text" id="txtEmail" placeholder="Email">
                 <input type="text" id="txtEmail" placeholder="Password">
                 <input type="text" id="txtEmail" placeholder="Education">
-                <button id="btnSignupConfirm" class="btn lighten-7>">Sign up</button>
+                <a id="btnSignupConfirm" class="btn lighten-7>">Sign up</a>
             </div>
             <a href="#" class="page-arrow"><img src="images/page-arrow.svg" alt="arrow"></a>
         </div>
@@ -73,7 +73,7 @@
             <div class="box">
                 <h6 class="h6-main">Reset password</h6>
                 <input type="text" id="txtEmail" placeholder="Email">
-                <button id="btnPasswordReset" class="btn lighten-7>">Send email verification link</button>
+                <a id="btnPasswordReset" class="btn lighten-7>">Send email verification link</a>
             </div>
             <a href="#" class="page-arrow"><img src="images/page-arrow.svg" alt="arrow"></a>
         </div>
@@ -83,7 +83,7 @@
     <div class="wrapper-2" id="screenHomePage">
         <div class="header">
             <div class="header-top">
-                <button class="btnLogout" class="btn lighten-7>">Sign out</button>
+                <a class="btnLogout" class="btn lighten-7>">Sign out</a>
             </div>
             <div class="header-bottom">
                 <h6 class="h6-main">decoene.bruno@hotmail.com</h6>
@@ -117,7 +117,7 @@
     <div class="wrapper-2" id="screenListView">
         <div class="header">
             <div class="header-top">
-                <button class="btnLogout" class="btn lighten-7>">Sign out</button>
+                <a class="btnLogout" class="btn lighten-7>">Sign out</a>
             </div>
             <div class="header-bottom">
                 <h6 class="h6-main">decoene.bruno@hotmail.com</h6>
@@ -171,7 +171,7 @@
     <div class="wrapper-2" id="screenMessages">
             <div class="header">
                 <div class="header-top">
-                    <button class="btnLogout" class="btn lighten-7>">Sign out</button>
+                    <a class="btnLogout" class="btn lighten-7>">Sign out</a>
                 </div>
                 <div class="header-bottom">
                     <h6 class="h6-main">decoene.bruno@hotmail.com</h6>

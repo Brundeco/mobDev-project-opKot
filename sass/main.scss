@@ -12,7 +12,7 @@
 
 
 // - - - - - buttons - - - - - -
-button {
+.box > a, .header-top a {
     box-shadow: none !important;
     border-radius: $main-border-radius !important;
 }
